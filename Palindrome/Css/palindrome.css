@@ -1,0 +1,27 @@
+#GFG {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#GFG::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    background-image: url('../Img/imgPalindrome.jpg');
+    background-size: cover;
+
+    opacity: 0.8;
+}
+
+.card{
+  box-shadow: 3px 3px 3px  black;
+}
+h1, .font{
+  font-family: 'Pirata One', cursive;
+}
