@@ -19,5 +19,15 @@ function palindrome(){
     }
 }
 
-document.getElementById('validation').addEventListener('click', palindrome)
+function clickEvent(){
+  document.getElementById('validation').addEventListener('click', palindrome)
+}
 
+document.getElementById('myInput').addEventListener('keypress', function (e) 
+{
+  if (e.key === 'Enter') 
+  {
+    e.preventDefault();
+    document.getElementById("validation").click();
+  }
+});
